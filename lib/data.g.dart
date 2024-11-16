@@ -7,13 +7,13 @@ part of 'data.dart';
 // **************************************************************************
 
 Request _$RequestFromJson(Map<String, dynamic> json) => Request(
-      appld: json['appld'] as String,
+      appId: json['app_id'] as String,
       sentence: json['sentence'] as String,
-      outputType: json['output_type'] as String? ?? "heragane",
+      outputType: json['output_type'] as String? ?? "hiragana",
     );
 
 Map<String, dynamic> _$RequestToJson(Request instance) => <String, dynamic>{
-      'appld': instance.appld,
+      'app_id': instance.appId,
       'sentence': instance.sentence,
       'output_type': instance.outputType,
     };

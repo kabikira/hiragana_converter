@@ -5,12 +5,12 @@ part 'data.g.dart';
 @JsonSerializable(fieldRename: FieldRename.snake)
 class Request {
   const Request({
-    required this.appld,
+    required this.appId,
     required this.sentence,
-    this.outputType = "heragane",
+    this.outputType = "hiragana",
   });
 
-  final String appld;
+  final String appId;
   final String sentence;
   final String outputType;
 
